@@ -26,8 +26,8 @@
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: App packaged with Dockerfile targeting port 8501 for HuggingFace Spaces (Docker SDK — native Streamlit SDK deprecated Apr 30 2025)
-- [ ] **DEPLOY-02**: Dark Plotly theme applied consistently via st.plotly_chart(theme=None)
+- [x] **DEPLOY-01**: App packaged with Dockerfile targeting port 8501 for HuggingFace Spaces (Docker SDK — native Streamlit SDK deprecated Apr 30 2025)
+- [x] **DEPLOY-02**: Dark Plotly theme applied consistently via st.plotly_chart(theme=None)
 
 ## v2 Requirements
 
@@ -62,8 +62,8 @@
 | FORE-01 | Phase 1 | Pending |
 | FORE-02 | Phase 1 | Pending |
 | FORE-03 | Phase 1 | Pending |
-| DEPLOY-01 | Phase 1 | Pending |
-| DEPLOY-02 | Phase 1 | Pending |
+| DEPLOY-01 | Phase 1 | Complete |
+| DEPLOY-02 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 12 total

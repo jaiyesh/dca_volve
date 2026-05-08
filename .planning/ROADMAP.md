@@ -26,7 +26,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. User selects a date range on the DCA Forecast page, clicks Auto-Fit, and sees an Arps curve (exponential/hyperbolic/harmonic) overlaid on the historical production scatter with R-squared and RMSE metrics displayed
   4. User moves the qi, Di, or b sliders and the fitted curve and EUR estimate update live without re-triggering the optimizer
   5. App is live on HuggingFace Spaces via Docker SDK (sdk: docker, port 8501), loads within 60 seconds, and shows no SDK-deprecation or port errors
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Data pipeline: utils/data.py (load_data, filter_by_date, get_sidebar_kpis)
+- [ ] 01-02-PLAN.md — DCA math core: utils/dca.py (Arps equations, curve_fit wrapper, EUR, forecast, LaTeX)
+- [ ] 01-03-PLAN.md — Deployment config: Dockerfile, requirements.txt, README.md, config.toml
+- [ ] 01-04-PLAN.md — Chart factory + simple pages: utils/charts.py, Data Overview, Production Explorer
+- [ ] 01-05-PLAN.md — DCA Forecast page + app.py router + human verification
 
 ## Progress
 
@@ -35,4 +42,4 @@ Phases execute in numeric order: 1
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Full Build | 0/? | Not started | - |
+| 1. Full Build | 1/5 | In Progress|  |
