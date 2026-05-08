@@ -167,4 +167,4 @@ fig = build_dca_chart(
     df_fit_window=df_fit_window,
     df_forecast=df_forecast,
 )
-st.plotly_chart(fig, theme=None, use_container_width=True)
+st.plotly_chart(fig, theme=None, width="stretch")
