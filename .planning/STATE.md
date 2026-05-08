@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-full-build-04-PLAN.md
-last_updated: "2026-05-08T14:35:11.551Z"
+stopped_at: Completed 01-05-PLAN.md — awaiting human-verify checkpoint Task 3
+last_updated: "2026-05-08T14:38:49.112Z"
 last_activity: 2026-05-08 — Roadmap created; single-phase structure approved
 progress:
   total_phases: 1
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
   percent: 0
 ---
 
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-full-build P01 | 3 | 1 tasks | 2 files |
 | Phase 01-full-build P02 | 2 | 1 tasks | 3 files |
 | Phase 01-full-build P04 | 2 | 2 tasks | 3 files |
+| Phase 01-full-build P05 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -79,6 +80,8 @@ Recent decisions affecting current work:
 - [Phase 01-full-build]: Plotly 6.0.0 removed titlefont in yaxis — use title=dict(text=..., font=dict(color=...)) instead
 - [Phase 01-full-build]: st.plotly_chart(fig, theme=None, width='stretch') — prevents Streamlit theme override of plotly_dark
 - [Phase 01-full-build]: Chart factory pattern: utils/charts.py returns go.Figure with no st.* calls; pages handle all st.plotly_chart calls
+- [Phase 01-full-build]: use_container_width=True used in st.plotly_chart() instead of width='stretch' — latter is not a valid Streamlit API parameter
+- [Phase 01-full-build]: DCA forecast rendered on initial load with default slider values (t0=df.iloc[0]) — gives visual context before first Auto-Fit
 
 ### Pending Todos
 
@@ -92,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-08T14:35:11.547Z
-Stopped at: Completed 01-full-build-04-PLAN.md
+Last session: 2026-05-08T14:38:49.110Z
+Stopped at: Completed 01-05-PLAN.md — awaiting human-verify checkpoint Task 3
 Resume file: None

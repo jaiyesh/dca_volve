@@ -12,7 +12,7 @@ A single-phase full build that delivers a complete, deployable Streamlit app: da
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Full Build** - Build and deploy the complete Volve DCA app in one pass
+- [x] **Phase 1: Full Build** - Build and deploy the complete Volve DCA app in one pass (completed 2026-05-08)
 
 ## Phase Details
 
@@ -42,4 +42,4 @@ Phases execute in numeric order: 1
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Full Build | 4/5 | In Progress|  |
+| 1. Full Build | 5/5 | Complete   | 2026-05-08 |
