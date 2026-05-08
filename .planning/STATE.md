@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-full-build-02-PLAN.md
-last_updated: "2026-05-08T14:30:44.955Z"
+stopped_at: Completed 01-full-build-04-PLAN.md
+last_updated: "2026-05-08T14:35:11.551Z"
 last_activity: 2026-05-08 — Roadmap created; single-phase structure approved
 progress:
   total_phases: 1
   completed_phases: 0
   total_plans: 5
-  completed_plans: 3
+  completed_plans: 4
   percent: 0
 ---
 
@@ -53,6 +53,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-full-build P03 | 1min | 2 tasks | 5 files |
 | Phase 01-full-build P01 | 3 | 1 tasks | 2 files |
 | Phase 01-full-build P02 | 2 | 1 tasks | 3 files |
+| Phase 01-full-build P04 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [Phase 01-full-build]: Harmonic guard abs(b-1.0)<0.01 in calculate_eur() and forecast_arps() — prevents infinite EUR at b≈1
 - [Phase 01-full-build]: EUR uses analytical t_aband (solve q(t)=q_aband) not numerical integration — exact and finite
 - [Phase 01-full-build]: p0 uses q[0]*0.9 not q[0] exactly — scipy curve_fit fails silently when p0 is at boundary (issue #19180)
+- [Phase 01-full-build]: Plotly 6.0.0 removed titlefont in yaxis — use title=dict(text=..., font=dict(color=...)) instead
+- [Phase 01-full-build]: st.plotly_chart(fig, theme=None, width='stretch') — prevents Streamlit theme override of plotly_dark
+- [Phase 01-full-build]: Chart factory pattern: utils/charts.py returns go.Figure with no st.* calls; pages handle all st.plotly_chart calls
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-08T14:30:44.952Z
-Stopped at: Completed 01-full-build-02-PLAN.md
+Last session: 2026-05-08T14:35:11.547Z
+Stopped at: Completed 01-full-build-04-PLAN.md
 Resume file: None

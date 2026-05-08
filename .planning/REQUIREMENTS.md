@@ -8,8 +8,8 @@
 ### Data
 
 - [x] **DATA-01**: App loads and parses Volve CSV, filters shut-in days using ON_STREAM_HRS > 0
-- [ ] **DATA-02**: Data overview page displays summary statistics, date range, and raw data table
-- [ ] **DATA-03**: Production explorer shows time-series charts of oil/gas/water volumes, WHP, choke size, and water cut
+- [x] **DATA-02**: Data overview page displays summary statistics, date range, and raw data table
+- [x] **DATA-03**: Production explorer shows time-series charts of oil/gas/water volumes, WHP, choke size, and water cut
 
 ### DCA Fitting
 
@@ -53,8 +53,8 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | DATA-01 | Phase 1 | Complete |
-| DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Complete |
+| DATA-03 | Phase 1 | Complete |
 | DCA-01 | Phase 1 | Complete |
 | DCA-02 | Phase 1 | Complete |
 | DCA-03 | Phase 1 | Complete |
