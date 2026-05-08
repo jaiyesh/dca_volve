@@ -119,3 +119,76 @@ def build_dual_axis_chart(
         ),
     )
     return fig
+
+
+def build_dca_chart(
+    df_all: pd.DataFrame,
+    df_fit_window: pd.DataFrame,
+    df_forecast: pd.DataFrame,
+) -> go.Figure:
+    """
+    DCA chart combining:
+    - Historical scatter (all producing data, grey dots, small)
+    - Fit window data (orange dots, slightly larger, to show what was fitted)
+    - Fitted + forecast curve (cyan dashed line from forecast df)
+    df_all: full producing DataFrame with DATEPRD + BORE_OIL_VOL
+    df_fit_window: date-filtered DataFrame (user's selected fitting range)
+    df_forecast: output of forecast_arps() — columns: date, q
+    """
+    fig = go.Figure()
+
+    # All historical data (grey background scatter)
+    fig.add_trace(
+        go.Scatter(
+            x=df_all["DATEPRD"],
+            y=df_all["BORE_OIL_VOL"],
+            name="Historical",
+            mode="markers",
+            marker=dict(color="#666666", size=3, opacity=0.6),
+        )
+    )
+
+    # Fit window data (orange, slightly larger)
+    if df_fit_window is not None and len(df_fit_window) > 0:
+        fig.add_trace(
+            go.Scatter(
+                x=df_fit_window["DATEPRD"],
+                y=df_fit_window["BORE_OIL_VOL"],
+                name="Fit Window",
+                mode="markers",
+                marker=dict(color="#FF6B35", size=5),
+            )
+        )
+
+    # Fitted + forecast curve (cyan dashed)
+    if df_forecast is not None and len(df_forecast) > 0:
+        fig.add_trace(
+            go.Scatter(
+                x=df_forecast["date"],
+                y=df_forecast["q"],
+                name="Arps Forecast",
+                mode="lines",
+                line=dict(color="#00D4FF", width=2, dash="dash"),
+            )
+        )
+
+    fig.update_layout(
+        title=dict(text="DCA Forecast — Well 15/9-F-12", font=dict(color="#FAFAFA", size=15)),
+        template="plotly_dark",
+        paper_bgcolor="#0E1117",
+        plot_bgcolor="#0E1117",
+        font=dict(color="#FAFAFA", size=13),
+        legend=dict(bgcolor="rgba(0,0,0,0)", font=dict(color="#FAFAFA")),
+        margin=dict(l=60, r=40, t=50, b=50),
+        xaxis=dict(
+            title="Date",
+            gridcolor="#2A2A3A",
+            tickfont=dict(color="#CCCCCC"),
+        ),
+        yaxis=dict(
+            title="Oil Rate (Sm³/day)",
+            gridcolor="#2A2A3A",
+            tickfont=dict(color="#CCCCCC"),
+        ),
+    )
+    return fig
