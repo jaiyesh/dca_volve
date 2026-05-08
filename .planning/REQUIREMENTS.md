@@ -72,4 +72,4 @@
 
 ---
 *Requirements defined: 2026-05-08*
-*Last updated: 2026-05-08 after initial definition*
+*Last updated: 2026-05-08 — traceability updated, all 12 requirements mapped to Phase 1 (Full Build)*
