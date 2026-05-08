@@ -13,16 +13,16 @@
 
 ### DCA Fitting
 
-- [ ] **DCA-01**: User selects date range for DCA fitting via date pickers
-- [ ] **DCA-02**: App auto-fits Arps model (exponential/hyperbolic/harmonic) via scipy curve_fit with b constrained to [0, 1]
-- [ ] **DCA-03**: User can manually tune qi, Di, b via sliders with live curve update
-- [ ] **DCA-04**: Fitted curve overlaid on historical production chart
+- [x] **DCA-01**: User selects date range for DCA fitting via date pickers
+- [x] **DCA-02**: App auto-fits Arps model (exponential/hyperbolic/harmonic) via scipy curve_fit with b constrained to [0, 1]
+- [x] **DCA-03**: User can manually tune qi, Di, b via sliders with live curve update
+- [x] **DCA-04**: Fitted curve overlaid on historical production chart
 
 ### Forecast
 
-- [ ] **FORE-01**: User sets forecast horizon (months) and abandonment rate
-- [ ] **FORE-02**: App computes and displays EUR estimate
-- [ ] **FORE-03**: Forecast chart shows historical data + projected decline curve
+- [x] **FORE-01**: User sets forecast horizon (months) and abandonment rate
+- [x] **FORE-02**: App computes and displays EUR estimate
+- [x] **FORE-03**: Forecast chart shows historical data + projected decline curve
 
 ### Deployment
 
@@ -55,13 +55,13 @@
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Pending |
 | DATA-03 | Phase 1 | Pending |
-| DCA-01 | Phase 1 | Pending |
-| DCA-02 | Phase 1 | Pending |
-| DCA-03 | Phase 1 | Pending |
-| DCA-04 | Phase 1 | Pending |
-| FORE-01 | Phase 1 | Pending |
-| FORE-02 | Phase 1 | Pending |
-| FORE-03 | Phase 1 | Pending |
+| DCA-01 | Phase 1 | Complete |
+| DCA-02 | Phase 1 | Complete |
+| DCA-03 | Phase 1 | Complete |
+| DCA-04 | Phase 1 | Complete |
+| FORE-01 | Phase 1 | Complete |
+| FORE-02 | Phase 1 | Complete |
+| FORE-03 | Phase 1 | Complete |
 | DEPLOY-01 | Phase 1 | Complete |
 | DEPLOY-02 | Phase 1 | Complete |
 

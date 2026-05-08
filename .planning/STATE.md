@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-full-build-01-PLAN.md
-last_updated: "2026-05-08T14:30:07.643Z"
+stopped_at: Completed 01-full-build-02-PLAN.md
+last_updated: "2026-05-08T14:30:44.955Z"
 last_activity: 2026-05-08 — Roadmap created; single-phase structure approved
 progress:
   total_phases: 1
   completed_phases: 0
   total_plans: 5
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-full-build P03 | 1min | 2 tasks | 5 files |
 | Phase 01-full-build P01 | 3 | 1 tasks | 2 files |
+| Phase 01-full-build P02 | 2 | 1 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,10 @@ Recent decisions affecting current work:
 - [Phase 01-full-build]: Path(__file__).parent.parent for CSV path — required for HuggingFace Spaces Docker environment
 - [Phase 01-full-build]: Explicit format='%d-%b-%y' on pd.to_datetime for DATEPRD — avoids pandas inference silently misreading ambiguous dates
 - [Phase 01-full-build]: All 2007 Volve rows are shut-in; min producing year is 2008, not 2007 — DATEPRD format confirmed as DD-Mon-YY
+- [Phase 01-full-build]: Three separate q(t) functions (exponential/hyperbolic/harmonic) — harmonic is mathematical singularity (b=1 makes 1-b=0), not a degenerate case
+- [Phase 01-full-build]: Harmonic guard abs(b-1.0)<0.01 in calculate_eur() and forecast_arps() — prevents infinite EUR at b≈1
+- [Phase 01-full-build]: EUR uses analytical t_aband (solve q(t)=q_aband) not numerical integration — exact and finite
+- [Phase 01-full-build]: p0 uses q[0]*0.9 not q[0] exactly — scipy curve_fit fails silently when p0 is at boundary (issue #19180)
 
 ### Pending Todos
 
@@ -83,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-08T14:30:07.640Z
-Stopped at: Completed 01-full-build-01-PLAN.md
+Last session: 2026-05-08T14:30:44.952Z
+Stopped at: Completed 01-full-build-02-PLAN.md
 Resume file: None
