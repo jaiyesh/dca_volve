@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-full-build-03-PLAN.md
-last_updated: "2026-05-08T14:29:01.109Z"
+stopped_at: Completed 01-full-build-01-PLAN.md
+last_updated: "2026-05-08T14:30:07.643Z"
 last_activity: 2026-05-08 — Roadmap created; single-phase structure approved
 progress:
   total_phases: 1
   completed_phases: 0
   total_plans: 5
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -51,6 +51,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 01-full-build P03 | 1min | 2 tasks | 5 files |
+| Phase 01-full-build P01 | 3 | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,9 @@ Recent decisions affecting current work:
 - [Phase 01-full-build]: HF Spaces sdk: docker (not sdk: streamlit) — native Streamlit SDK deprecated Apr 30 2025
 - [Phase 01-full-build]: Port 8501 left as Streamlit default — not set in CMD or config.toml server section
 - [Phase 01-full-build]: python:3.11 base image required by scipy==1.17.1 Python version requirement
+- [Phase 01-full-build]: Path(__file__).parent.parent for CSV path — required for HuggingFace Spaces Docker environment
+- [Phase 01-full-build]: Explicit format='%d-%b-%y' on pd.to_datetime for DATEPRD — avoids pandas inference silently misreading ambiguous dates
+- [Phase 01-full-build]: All 2007 Volve rows are shut-in; min producing year is 2008, not 2007 — DATEPRD format confirmed as DD-Mon-YY
 
 ### Pending Todos
 
@@ -79,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-08T14:29:01.105Z
-Stopped at: Completed 01-full-build-03-PLAN.md
+Last session: 2026-05-08T14:30:07.640Z
+Stopped at: Completed 01-full-build-01-PLAN.md
 Resume file: None
